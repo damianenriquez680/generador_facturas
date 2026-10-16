@@ -3,9 +3,7 @@
 API REST con Flask + SQLite para gestionar clientes, productos y facturas.
 Frontend en HTML/CSS/JS vanilla y generación de PDF con WeasyPrint en desarrollo.
 
-> Proyecto personal
-> Iniciado: Septiembre 2026
-> Estado: En curso ⚒️
+> Proyecto personal · Iniciado: Septiembre 2026 · Estado: En curso ⚒️
 
 ---
 
