@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Generador de Facturas</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Generador de facturas y presupuestos</h1>
+        <nav>
+            <a href="#clientes">Clientes</a>
+            <a href="#productos">Productos</a>
+            <a href="#facturas">Facturas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="clientes">
+            <h2>Clientes</h2>
+
+            <form id="form-cliente">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="rfc">RFC</label>
+                <input type="text" name="rfc" id="rfc">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono">
+
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion">
+
+                <button type="submit">Guardar cliente</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>RFC</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-clientes"></tbody>
+            </table>
+
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+
+            <form id="form-producto">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="descripcion">Descripcion</label>
+                <input type="text" name="descripcion" id="descripcion">
+
+                <label for="precio_unitario">Precio unitario</label>
+                <input type="number" name="precio" id="precio_unitario" step="0.01" min="0" required>
+
+                <button type="submit">Guardar producto</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Precio unitario</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-productos"></tbody>
+            </table>
+
+        </section>
+        <section id="facturas">
+            <h2>Facturas</h2>
+        </section>
+    </main>
+</body>
+</html>
